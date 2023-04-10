@@ -1,11 +1,10 @@
 import React from 'react';
+import Index from './routes';
 import './styles/App.css';
 
 function App() {
   return (
-    <div className="App">
-      Hello
-    </div>
+    <Index></Index>
   );
 }
 
