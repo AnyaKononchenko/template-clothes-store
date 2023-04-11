@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className='container-fluid'>
+      
+    </div>
+  );
+};
 
-export default Home
+export default Home;

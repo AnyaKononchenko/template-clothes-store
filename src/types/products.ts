@@ -5,9 +5,54 @@ export interface Product {
   description: string,
   price: number,
   discount?: number,
-  color: string[],
+  color: Color[],
   size: ClothSize[] | ShoesSize[],
   isNew: boolean,
+  type: Type,
+  fashion: Fashion[],
+  brand: Brand,
+  gender: Gender,
+  inStock: number,
+}
+
+enum Gender {
+  male = "Male",
+  female = "Female",
+  unisex = "Unisex",
+}
+
+enum Color {
+  black = "Black",
+  blue = "Blue",
+  red = "Red",
+  green = "Green",
+  golden = "Golden",
+}
+
+enum Fashion {
+  casual = "Casual style",
+  newLook = "New Look",
+  sport = "Sport",
+  vintage = "Vintage",
+  classical = "Classical style",
+  the90s = "Nail the 90s",
+}
+
+enum Type {
+  coatsAndJackets = "Coats & Jackets",
+  dresses = "Dresses",
+  jerseyTops = "Jersey Tops",
+  capsAndHats = "Caps & Hats",
+  shoes = "Shoes",
+}
+
+enum Brand {
+  antipodium = "Antipodium",
+  adidas = "Adidas",
+  newBalance = "New Balance",
+  riverIsland = "River Island",
+  asos = "Asos",
+  guess = "Guess",
 }
 
 enum ClothSize {
